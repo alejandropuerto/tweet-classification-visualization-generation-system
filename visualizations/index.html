@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Evaluation</title>
+    
+        <style>
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+        #chart {
+            max-width: 600px;
+            max-height: 400px;
+            }
+        </style>
+</head>
+
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+            <div class="container">
+            <h1 class="text-center">D3.js <span style="font-weight: bold">Evaluation </span>Graphics</h1>
+            <h4>Histogram with two variables</h4>
+            <div id="Tweet score distribution"></div>
+            <hr>
+            <h4>Price values as the only category</h4>
+            <div id="Tweet location distribution"></div>
+            <hr>
+            <h4>Price with interactive bins</h4>
+            <div id="Tweet timeline"></div>
+        </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.js"></script>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+<script src="script.js"></script>
