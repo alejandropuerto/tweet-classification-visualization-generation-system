@@ -20,20 +20,32 @@
 <!-- Load d3.js -->
 <script src="https://d3js.org/d3.v4.js"></script>
 
-<!-- Create a div where the graph will take place -->
-            <div class="container">
-            <h1 class="text-center">D3.js <span style="font-weight: bold">Evaluation </span>Graphics</h1>
-            <h4>Histogram with two variables</h4>
-            <div id="Tweet score distribution"></div>
-            <hr>
-            <h4>Price values as the only category</h4>
-            <div id="Tweet location distribution"></div>
-            <hr>
-            <h4>Price with interactive bins</h4>
-            <div id="Tweet timeline"></div>
-        </div>
+<!-- Real-time -->
+<body>
+    <h4>Tweet score distribution</h4>
+    <div id = "histogram_chart"></div>
+    <script>
+    var MAX_LENGTH = 100;
+    var duration = 500;
+    var chart = histogram();
+    </script>
+    <hr>
+    <h4>Tweet score distribution</h4>
+    <div id = "geomap_chart"></div>
+    <script>
+    var chart = geomap();
+    </script>
+    <hr>
+    <h4>Tweet timeline</h4>
+    <div id = "distrbution_area_chart"></div>
+    <script>
+    var chart = distribution_area();
+    </script>    
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.js"></script>
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</body>
+        
 <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-sankey/0.12.3/d3-sankey.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
